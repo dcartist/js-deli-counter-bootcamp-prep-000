@@ -1,9 +1,9 @@
 var katzDeliLine = [];
 // var otherDeli = [];
 var count = katzDeliLine.length
-function takeANumber(y,x){
+function takeANumber(y){
   katzDeliLine = y.push(x)
-  var welcome = 'Welcome, '+x+'. You are number '+y.length+' in line.'
+  var welcome = 'Welcome, You are number '+y.length+' in line.'
   return katzDeliLine, welcome
   // if (y === katzDeliLine){
   //   katzDeliLine.push(x)
@@ -41,10 +41,12 @@ function currentLine(line){
     var count = 1
     for (var i=0;i<line.length;i++){
       x += count+". " + line[i] + ", ";
+      //Adds 1. Name, 2. Name 3.Name 
       count++
     }
     x = x.slice(0, -2);
     var info = 'The line is currently: '+x
+    //the line is currently: 1. Name, 2. Name 3.Name 
     return info
   }
 
